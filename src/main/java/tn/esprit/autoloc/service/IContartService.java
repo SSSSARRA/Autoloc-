@@ -1,6 +1,6 @@
 package tn.esprit.autoloc.service;
 
-import tn.esprit.autoloc.doamin.Contrat;
+import tn.esprit.autoloc.domain.Contrat;
 
 import java.util.List;
 

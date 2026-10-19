@@ -2,7 +2,7 @@ package tn.esprit.autoloc.service;
 
 import lombok.AllArgsConstructor;
 import org.springframework.stereotype.Service;
-import tn.esprit.autoloc.doamin.Contrat;
+import tn.esprit.autoloc.domain.Contrat;
 import tn.esprit.autoloc.repository.ContratRepository;
 
 import java.util.List;

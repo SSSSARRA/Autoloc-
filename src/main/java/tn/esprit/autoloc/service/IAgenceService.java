@@ -1,7 +1,6 @@
 package tn.esprit.autoloc.service;
 
-import tn.esprit.autoloc.doamin.Agence;
-import tn.esprit.autoloc.doamin.Client;
+import tn.esprit.autoloc.domain.Agence;
 
 import java.util.List;
 

@@ -2,7 +2,7 @@ package tn.esprit.autoloc.service;
 
 import lombok.AllArgsConstructor;
 import org.springframework.stereotype.Service;
-import tn.esprit.autoloc.doamin.Client;
+import tn.esprit.autoloc.domain.Client;
 import tn.esprit.autoloc.repository.ClientRespository;
 
 import java.util.List;
@@ -12,7 +12,7 @@ import java.util.List;
 public class IClientServiceImp implements IClientService{
     private final ClientRespository clientRespository;
     @Override
-    public Client ajouterclient(Client client) {
+    public Client ajouterClient(Client client) {
         return clientRespository.save(client);
     }
 

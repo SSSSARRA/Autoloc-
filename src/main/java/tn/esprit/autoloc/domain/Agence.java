@@ -1,38 +1,31 @@
-package tn.esprit.autoloc.doamin;
+package tn.esprit.autoloc.domain;
 
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
-import java.time.LocalDate;
 
 @Entity
-@Table(name = "client")
+@Table(name = "agence")
 @Getter
 @Setter
 @NoArgsConstructor
 @AllArgsConstructor
-public class Client {
+public class Agence {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long idClient;
+    private Long idAgence;
 
     @Column(nullable = false, length = 50)
     private String nom;
 
     @Column(nullable = false, length = 50)
-    private String prenom;
+    private String ville;
 
-    @Column(nullable = false, unique = true, length = 100)
-    private String email;
+    @Column(nullable = false, length = 100)
+    private String adresse;
 
     @Column(nullable = false, length = 20)
     private String telephone;
-
-    @Column(nullable = false, unique = true, length = 30)
-    private String numPermis;
-
-    @Column(nullable = false)
-    private LocalDate dateInscription;
 }
